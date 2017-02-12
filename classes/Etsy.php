@@ -93,7 +93,10 @@
                 $result = $this->ecache->get($key);
             } else {
                 //instantiate class and call method, create cache
-                $result = $class::$method($options, $json);
+                //$result = $class::$method($options, $json);
+
+                $result = new $class;
+                $result = $result->$method($options, $json);
                 
                 if($this->cache){
                     
