@@ -20,7 +20,7 @@
          */
                 
         //Set variable for base_url to etsy api
-        private $base_url = 'http://beta-api.etsy.com/v1/';
+        private $base_url = 'https://openapi.etsy.com/v2/';
         
         //Turn cache on off
         private $cache = false;
