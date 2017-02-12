@@ -69,7 +69,7 @@
                 die();
             }
             
-            $request = 'users/' . $params['user_id'] . '/feedback/buyer' '?api_key=' . ETSY_KEY;
+            $request = 'users/' . $params['user_id'] . '/feedback/buyer?api_key=' . ETSY_KEY;
             $request .= parent::createURL($params, array('user_id'));
                        
             $result = parent::makeRequest($request);
